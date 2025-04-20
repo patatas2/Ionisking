@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ioannisking</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #333; }
+    header { background: #111; color: #fff; text-align: center; padding: 1rem; }
+    header img { width: 120px; border-radius: 50%; margin-bottom: 0.5rem; }
+    nav { background: #222; display: flex; justify-content: center; gap: 2rem; padding: 1rem 0; }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #f90; }
+    section { padding: 2rem; }
+    h2 { margin-bottom: 1rem; color: #444; }
+    .gallery img, .videos iframe { width: 100%; max-width: 300px; margin: 10px; border-radius: 10px; }
+    .gallery, .videos { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    form input, form textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; }
+    form button { padding: 0.5rem 1rem; background: #111; color: #fff; border: none; cursor: pointer; }
+    form button:hover { background: #f90; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="20241231_172720.jpg" alt="ioannisking logo">
+    <h1>ioannisking</h1>
+  </header>
+
+  <nav>
+    <a href="#contact">Επικοινωνία</a>
+    <a href="#photos">Φωτογραφίες</a>
+    <a href="#videos">Βίντεο</a>
+  </nav>
+
+  <section id="contact">
+    <h2>Επικοινωνία</h2>
+    <form>
+      <input type="text" placeholder="Όνομα" required>
+      <input type="email" placeholder="Email" required>
+      <textarea rows="5" placeholder="Μήνυμα" required></textarea>
+      <button type="submit">Αποστολή</button>
+    </form>
+  </section>
+
+  <section id="photos">
+    <h2>Φωτογραφίες</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="photo1">
+      <img src="https://via.placeholder.com/300x200" alt="photo2">
+      <img src="https://via.placeholder.com/300x200" alt="photo3">
+    </div>
+  </section>
+
+  <section id="videos">
+    <h2>Βίντεο</h2>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+</body>
+</html>
